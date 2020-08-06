@@ -1,0 +1,30 @@
+footer {
+    width: 100%;
+    height: map-get($map: $bloc-size, $key: footer-height);
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid $color-border-header;
+    @media screen and (max-width: 991px) {
+        height: 100px;
+    }
+    @media screen and (max-width: 699px) {
+        height: 80px;
+    }
+    & a {
+        color: $color-secondary;
+        text-decoration: none;
+        padding-left: $footer-padding;
+        padding-right: $footer-padding;
+        &:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+        }
+        &:hover {
+            animation: wiggle ease-in-out 500ms infinite alternate;
+        }
+    }
+}

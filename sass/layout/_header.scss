@@ -1,0 +1,15 @@
+header {
+  background-color: $color-primary;
+  color: $color-secondary;
+  height: map-get($map: $bloc-size, $key: header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid $color-border-header;
+  @media screen and (max-width: 991px) {
+    height: 200px;
+  }
+  @media screen and (max-width: 699px) {
+    height: 150px;
+  }
+}
