@@ -1,0 +1,189 @@
+.menu {
+    & a {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+}
+
+.title__menu {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: map-get($map: $font-size, $key: menu);
+    margin-top: 80px;
+    margin-bottom: 40px; 
+    margin-top: 80px;
+    @media screen and (max-width: 991px) {
+        font-size: 50px;
+    }
+    @media screen and (max-width: 699px) {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+.main__menu--variation1 {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-back-first;
+    box-shadow: 0px 0px 5px 6px #f1f1f1;
+    margin-bottom: $margin * 2;
+    margin-top: 0;
+    color: $color-font-first;
+    font-family: "Segoe print";
+    line-height: 50px;
+    padding-bottom: 100px;
+}
+
+.section {
+    &__header--variation1 {
+        font-family: "Devonshire";
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & i {
+            font-size: $logo-size;
+            background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-top: 90px;
+            padding-bottom: 30px;
+            @media screen and (max-width: 991px) {
+                font-size: 100px;
+            }
+            @media screen and (max-width: 699px) {
+                font-size: 80px;
+                text-align: center;
+            }
+        }
+        & h3 {
+            font-size: $title-size;
+            padding-bottom: 50px;
+            margin: 0;
+            font-weight: normal;
+            @media screen and (max-width: 991px) {
+                font-size: 50px;
+            }
+            @media screen and (max-width: 699px) {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+    }
+    &__menu--variation1 {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin: 0;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h4 {
+            display: flex;
+            justify-content: center;
+            font-family: "Segoe print";
+            font-size: map-get($map: $font-size, $key: chic);
+            background: linear-gradient(
+                    to top,
+                    $color-font-first 0%,
+                    $color-font-first 4px,
+                    transparent 5px
+                )
+                no-repeat;
+            background-size: 0 100%;
+            transition: background-size 0.5s;
+            @media screen and (max-width: 991px) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: 699px) {
+                font-size: 18px;
+                text-align: center;
+            }
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+    }
+
+    &__footer--variation1 {
+        font-family: "Devonshire";
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        & i {
+            font-size: $logo-size / 2;
+            background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-right: 20px;
+            @media screen and (max-width: 699px) {
+                font-size: $logo-size / 3;
+            }
+        }
+        & h3 {
+            align-self: center;
+            margin: 0;
+            font-weight: normal;
+            font-size: $logo-size / 2;
+            @media screen and (max-width: 699px) {
+                font-size: $logo-size / 3;
+            }
+        }
+    }
+}
+
+.bloc__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    @media screen and (max-width: 699px) {
+        width: 95%;
+    }
+    & img {
+        max-width: 25%;
+        max-height: 50px;
+        @media screen and (max-width: 699px) {
+            max-width: 20%;
+        }
+    }
+}
+
+.bloc__dishes {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    & p {
+        font-size: map-get($map: $font-size, $key: text);
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 699px) {
+            text-align: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    & span {
+        display: inline-block;
+        justify-content: flex-end;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+}

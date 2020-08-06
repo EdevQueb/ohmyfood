@@ -1,0 +1,162 @@
+.main__menu--variation2 {
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-back-second;
+    box-shadow: 0px 0px 5px 6px #f1f1f1;
+    margin-bottom: $margin * 2;
+    line-height: 50px;
+    margin-top: 0;
+    padding-bottom: 100px;
+}
+
+.section {
+    &__header--variation2 {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h3 {
+            text-align: center;
+            padding-bottom: 50px;
+            margin: 0;
+            font-family: "Croissant One";
+            font-size: $title-size * 0.75;
+            font-weight: normal;
+            background: -webkit-linear-gradient(bottom right, #6e4ccc, $color-font-second);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-top: 100px;
+            padding-bottom: 60px;
+            @media screen and (max-width: 991px) {
+              font-size: 50px;
+            }
+            @media screen and (max-width: 699px) {
+              font-size: 40px;
+              text-align: center;
+            }
+        }
+    }
+        &__menu--variation2 {
+          width: 100%;
+          box-shadow: none;
+          margin: 0;
+          height: auto;
+          margin-bottom: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          & h4 {
+            display: flex;
+            justify-content: center;
+            font-family: "Sitka";
+            font-size: map-get($map: $font-size, $key: chic);
+            @media screen and (max-width: 991px) {
+              font-size: 22px;
+            }
+            @media screen and (max-width: 699px) {
+              font-size: 18px;
+              text-align: center;
+            }
+          }
+    }
+}
+
+#entrée2 {
+    color: $color-font-second;
+    & h4 {
+      color: $color-font-second;
+      background: linear-gradient(
+          to top,
+          $color-font-second 0%,
+          $color-font-second 4px,
+          transparent 5px
+        )
+        no-repeat;
+      background-size: 0 100%;
+      transition: background-size 0.5s;
+      &:hover {
+        background-size: 100% 100%;
+      }
+    }
+}
+      
+#plat2 {
+    color: #a56799;
+    & h4 {
+      color: #a56799;
+      background: linear-gradient(
+          to top,
+          #a56799 0%,
+          #a56799 4px,
+          transparent 5px
+      )
+        no-repeat;
+      background-size: 0 100%;
+      transition: background-size 0.5s;
+      &:hover {
+        background-size: 100% 100%;
+      }
+    }
+}
+      
+#dessert2 {
+    color: #6e4ccc;
+    & h4 {
+      color: #6e4ccc;
+      background: linear-gradient(
+          to top,
+          #6e4ccc 0%,
+          #6e4ccc 4px,
+          transparent 5px
+        )
+        no-repeat;
+      background-size: 0 100%;
+      transition: background-size 0.5s;
+      &:hover {
+        background-size: 100% 100%;
+      }
+    }
+}
+      
+.bloc__title2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    color: $color-font-second;
+    & img {
+      max-width: 25%;
+      max-height: 40px;
+    }
+}
+      
+.bloc__dishes2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    & p {
+      font-size: map-get($map: $font-size, $key: text);
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 699px) {
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        }
+    }
+    & span {
+      display: inline-block;
+      justify-self: flex-end;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+}
