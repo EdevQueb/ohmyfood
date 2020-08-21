@@ -235,6 +235,7 @@ main {
 .menu__row {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 991px) {
   .menu__row {
@@ -287,9 +288,9 @@ button span:nth-child(3) {
 }
 
 .menu__first {
-  width: 22%;
+  width: 40%;
   height: 0;
-  padding-top: 33%;
+  padding-top: 50%;
   position: relative;
   background-color: #fcdfdb;
   display: flex;
@@ -355,9 +356,9 @@ button span:nth-child(3) {
 }
 
 .menu__second {
-  width: 22%;
+  width: 40%;
   height: 0;
-  padding-top: 33%;
+  padding-top: 50%;
   position: relative;
   background-color: #fff5fe;
   font-size: 1.3rem;
@@ -391,6 +392,7 @@ button span:nth-child(3) {
 }
 .menu__second p {
   color: #c77412;
+  font-size: 150%;
 }
 .menu__second h2 {
   background: -webkit-linear-gradient(bottom right, #6e4ccc, #c77412);
@@ -418,9 +420,9 @@ button span:nth-child(3) {
 
 .menu__third {
   background-color: #f9f9f9;
-  width: 22%;
+  width: 40%;
   height: 0;
-  padding-top: 33%;
+  padding-top: 50%;
   position: relative;
   font-size: 2rem;
   text-align: center;
@@ -484,9 +486,9 @@ button span:nth-child(3) {
 
 .menu__fourth {
   background-color: #fdfffd;
-  width: 22%;
+  width: 40%;
   height: 0;
-  padding-top: 33%;
+  padding-top: 50%;
   position: relative;
   font-size: 2rem;
   text-align: center;
